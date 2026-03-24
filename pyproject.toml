@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-inter-agent-chat"
+version = "0.1.0"
+description = "Codex-native port of inter-agent terminal chat with cross-platform registry and testable TIOCSTI tooling."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "jiaxun" }
+]
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+codex-inter-agent-chat = "codex_inter_agent_chat.cli:main"
+codex-team = "codex_inter_agent_chat.team_cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

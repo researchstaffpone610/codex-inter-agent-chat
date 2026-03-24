@@ -1,0 +1,7 @@
+interface:
+  display_name: "Inter-Agent Chat Codex"
+  short_description: "Codex terminal-to-terminal agent chat"
+  default_prompt: "Use $inter-agent-chat-codex. For inter-agent requests, first run `codex-team list`. If the target exists in the live roster, immediately run `codex-team send --to <agent> --message ...`. Do not ask whether the peer needs startup/registration if the live roster already contains it. For demo/showcase requests with a live peer present, default to a real exchange instead of asking walkthrough-vs-live. Your first visible action should be command-oriented, not a clarifying question. When you receive `[@yourName] (from sender) ...` and the message is clearly asking for a reply, an ack, an exact token/string, or the next step in a protocol turn, reply to that sender via `codex-team send --to <sender> --message ...` instead of printing the reply inline."
+
+policy:
+  allow_implicit_invocation: true
