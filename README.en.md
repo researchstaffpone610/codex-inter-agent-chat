@@ -2,10 +2,6 @@
 
 ![codex-inter-chat-demo](./assets/demo/codex-inter-chat-demo-3x.gif)
 
-[Watch full demo video](https://github.com/user-attachments/assets/5b977592-0d6f-4715-b512-bc8dd5bd4e7b)
-
-A Codex-native port of [tessron/claude-code-skills/inter-agent-chat](https://github.com/tessron/claude-code-skills/tree/main/inter-agent-chat).
-
 ---
 
 ## Overview
